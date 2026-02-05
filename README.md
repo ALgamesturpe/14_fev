@@ -1,2 +1,22 @@
-# 14_fev
-Just for my love
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valentine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="center">
+
+  <h1 class="valentine-text">WILL YOU BE MY VALENTINE???</h1>
+
+  <div class="buttons">
+    <button id="yesBtn" class="btn yes">YES</button>
+    <button id="noBtn" class="btn no">NO</button>
+  </div>
+
+  <div id="hearts-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
