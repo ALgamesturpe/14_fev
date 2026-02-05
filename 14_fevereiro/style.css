@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.valentine-text {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  position: relative;
+  width: 300px;
+  height: 150px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+}
+
+.yes {
+  background: #ff2d55;
+  color: white;
+  left: 20px;
+}
+
+.no {
+  background: #555;
+  color: white;
+  right: 20px;
+}
+
+.title {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.coupons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.coupon {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.coupon:hover {
+  transform: scale(1.05);
+}
+
+.coupon.used {
+  background: #2ecc71;
+  cursor: not-allowed;
+}
+
+.counter {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.9rem;
+}
+
+.final-message {
+  margin: 40px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hearts */
+.heart {
+  position: fixed;
+  bottom: 0;
+  font-size: 24px;
+  animation: float 3s linear forwards;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
